@@ -3,22 +3,18 @@
 Homebrew installation and updates for BabbelStream.
 Maintainer: [sichgeis](https://github.com/sichgeis).
 
-## BabbelStream pilot
+## Installer downloads temporarily withdrawn
 
-The 0.5.2 release (new app icon; app behavior unchanged from 0.5.1) is published
-and its anonymous download checksum verified. The cask is active on this tap's
-default branch. On 0.5.1, public Homebrew installation passed on macOS 27.0.1 after moving the manual app aside. A later missing-bundle
-reinstall restored the app; launch and dictation then passed without a Keychain
-prompt. The disappearance cause is unknown. A further restart of the Homebrew
-copy, a genuine future-version upgrade, uninstall retention and rollback remain
-separately untested. This remains a limited non-notarized colleague pilot.
+The older 0.5.1/0.5.2 installer downloads have been withdrawn from GitHub as part
+of a public-data scrub. The cask is disabled until a clean replacement passes its
+smoke test and is published. Existing installed apps and local data are unchanged;
+no uninstall or upgrade is required. Clean source remains public in the app repo.
+Historical pilot evidence remains in the linked app documentation.
 
-This is an independent tap, not Homebrew's official catalogue. BabbelStream 0.5.2
-is ad-hoc signed, not Apple-notarized. It is Apple Silicon only, with macOS 13.0
-as the declared deployment target; native evidence is on macOS 26.7.1 and pilot
-smoke on 27.0.1. Other versions and the first real Homebrew upgrade (0.5.1 to 0.5.2) remain unverified.
+## Installation (paused)
 
-## Installation
+The following commands are reference instructions for after publication resumes.
+They cannot currently install or reinstall the withdrawn version.
 
 With Homebrew already installed:
 

@@ -10,6 +10,8 @@ cask "babbelstream" do
   depends_on arch: :arm64
   depends_on macos: :ventura
 
+  disable! date: "2026-10-24", because: "the old installer was withdrawn pending a sanitized replacement"
+
   app "BabbelStream.app"
 
   caveats <<~EOS
