@@ -3,18 +3,15 @@
 Homebrew installation and updates for BabbelStream.
 Maintainer: [sichgeis](https://github.com/sichgeis).
 
-## Installer downloads temporarily withdrawn
+## BabbelStream 0.5.3
 
-The older 0.5.1/0.5.2 installer downloads have been withdrawn from GitHub as part
-of a public-data scrub. The cask is disabled until a clean replacement passes its
-smoke test and is published. Existing installed apps and local data are unchanged;
-no uninstall or upgrade is required. Clean source remains public in the app repo.
-Historical pilot evidence remains in the linked app documentation.
+The clean 0.5.3 rebuild restores the public installer and Homebrew channel.
+It is Apple Silicon only, requires macOS 13.0 or later, and is ad-hoc signed,
+not notarized by Apple. Existing provider settings are preserved. A direct upgrade
+from a version without saved routing to a LiteLLM namespace needs one explicit
+LiteLLM selection in Settings. Older 0.5.1/0.5.2 installers remain withdrawn.
 
-## Installation (paused)
-
-The following commands are reference instructions for after publication resumes.
-They cannot currently install or reinstall the withdrawn version.
+## Installation
 
 With Homebrew already installed:
 

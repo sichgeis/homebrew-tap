@@ -1,6 +1,6 @@
 cask "babbelstream" do
-  version "0.5.2"
-  sha256 "728b702d394a21a7af7ebca8d2385422973d2b3ee22ac1c809448f16523a2c82"
+  version "0.5.3"
+  sha256 "41b8aed841824c66862b65a11c576364300e3cbd07760370e81f76b77a6a99a2"
 
   url "https://github.com/sichgeis/babbelstream/releases/download/v#{version}/BabbelStream-#{version}.dmg"
   name "BabbelStream"
@@ -9,8 +9,6 @@ cask "babbelstream" do
 
   depends_on arch: :arm64
   depends_on macos: :ventura
-
-  disable! date: "2026-10-24", because: "the old installer was withdrawn pending a sanitized replacement"
 
   app "BabbelStream.app"
 
