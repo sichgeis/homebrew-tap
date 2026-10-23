@@ -6,10 +6,12 @@ Maintainer: [sichgeis](https://github.com/sichgeis).
 ## BabbelStream pilot
 
 The 0.5.1 release is published and its anonymous download checksum verified.
-The cask is active on this tap's default branch. The downloaded-app pilot passed
-on a second Apple Silicon Mac after the Keychain repair documented below; the
-exact public Homebrew installation test is in progress. Broader rollout awaits
-that result.
+The cask is active on this tap's default branch. Public Homebrew installation
+passed on macOS 27.0.1 after moving the manual app aside. A later missing-bundle
+reinstall restored the app; launch and dictation then passed without a Keychain
+prompt. The disappearance cause is unknown. A further restart of the Homebrew
+copy, a genuine future-version upgrade, uninstall retention and rollback remain
+separately untested. This remains a limited non-notarized colleague pilot.
 
 This is an independent tap, not Homebrew's official catalogue. BabbelStream 0.5.1
 is ad-hoc signed, not Apple-notarized. It is Apple Silicon only, with macOS 13.0
@@ -92,4 +94,5 @@ quarantine removal, permission resets, app launches or process killing are permi
 - [Documentation index](https://github.com/sichgeis/babbelstream/blob/codex/homebrew-distribution/docs/README.md): user, developer and maintainer guides.
 
 These links track the app documentation branch until documentation integration.
+
 
