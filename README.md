@@ -1,4 +1,4 @@
-# the maintainer's Homebrew Tap
+# sichgeis Homebrew Tap
 
 Homebrew installation and updates for BabbelStream.
 Maintainer: [sichgeis](https://github.com/sichgeis).
