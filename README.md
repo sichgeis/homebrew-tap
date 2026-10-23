@@ -3,20 +3,20 @@
 Homebrew installation and updates for BabbelStream.
 Maintainer: [sichgeis](https://github.com/sichgeis).
 
-## BabbelStream pilot: staged, not generally available
+## BabbelStream pilot
 
-The BabbelStream cask is on `codex/babbelstream-pilot` while the downloaded app
-is tested on another Apple Silicon Mac. The default branch intentionally has no
-installable cask until the release asset has been published and verified.
-Do not run the proposed install command until that gate is complete.
+The 0.5.1 release is published and its anonymous download checksum verified.
+The cask is active on this tap's default branch. The downloaded-app pilot passed
+on a second Apple Silicon Mac after the Keychain repair documented below; the
+exact public Homebrew installation test is in progress. Broader rollout awaits
+that result.
 
 This is an independent tap, not Homebrew's official catalogue. BabbelStream 0.5.1
 is ad-hoc signed, not Apple-notarized. It is Apple Silicon only, with macOS 13.0
-as the declared deployment target; current native evidence is on macOS 26.7.1.
-Other macOS versions are not yet verified. The other-Mac launch/install and
-first real Homebrew upgrade remain pending.
+as the declared deployment target; native evidence is on macOS 26.7.1 and pilot
+smoke on 27.0.1. Other versions and a first real Homebrew upgrade remain unverified.
 
-## Installation (after activation)
+## Installation
 
 With Homebrew already installed:
 
@@ -39,7 +39,7 @@ bundle aside before installation rather than forcing an overwrite. Identical
 bundle adoption is not yet validated. Keep Application Support and Keychain intact.
 Never run both app copies simultaneously.
 
-## Update (after activation)
+## Update
 
 Finish or cancel dictation/processing/recovery, review any session-only last draft,
 and quit BabbelStream normally before replacing it:
@@ -52,7 +52,10 @@ open /Applications/BabbelStream.app
 ```
 
 Check Diagnostics for the new version/commit. macOS permissions or Keychain access
-may require reapproval. No automatic update check runs inside BabbelStream.
+may require reapproval. If Keychain prompts after every restart despite Always
+Allow, follow the [targeted per-item repair](https://github.com/sichgeis/babbelstream/blob/codex/homebrew-distribution/README.md#keychain-asks-for-your-password-after-every-restart).
+Do not allow all applications or delete the saved key. No automatic update check
+runs inside BabbelStream.
 The maintainer uploads each tested version to GitHub and updates the cask's version
 and SHA-256. A first real old-to-new upgrade must be tested separately; a successful
 first install is not upgrade evidence.
@@ -88,4 +91,5 @@ quarantine removal, permission resets, app launches or process killing are permi
 - [Download/launch quality test](https://github.com/sichgeis/babbelstream/blob/codex/homebrew-distribution/docs/homebrew-pilot-smoke-test.md): the current prepublication gate.
 - [Documentation index](https://github.com/sichgeis/babbelstream/blob/codex/homebrew-distribution/docs/README.md): user, developer and maintainer guides.
 
-These links track the staging branch until channel activation and documentation integration.
+These links track the app documentation branch until documentation integration.
+
