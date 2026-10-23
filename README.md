@@ -55,7 +55,7 @@ open /Applications/BabbelStream.app
 
 Check Diagnostics for the new version/commit. macOS permissions or Keychain access
 may require reapproval. If Keychain prompts after every restart despite Always
-Allow, follow the [targeted per-item repair](https://github.com/sichgeis/babbelstream/blob/codex/homebrew-distribution/README.md#keychain-asks-for-your-password-after-every-restart).
+Allow, follow the [targeted per-item repair](https://github.com/sichgeis/babbelstream/blob/main/README.md#keychain-asks-for-your-password-after-every-restart).
 Do not allow all applications or delete the saved key. No automatic update check
 runs inside BabbelStream.
 The maintainer uploads each tested version to GitHub and updates the cask's version
@@ -71,7 +71,7 @@ Disable launch-at-login in the app first if removing it permanently.
 
 For urgent rollback, quit and restore the prior trusted DMG manually, keeping data
 intact. This can disagree with Homebrew's installed version record. Follow the
-[release operator guide](https://github.com/sichgeis/babbelstream/blob/codex/homebrew-distribution/docs/homebrew-release.md)
+[release operator guide](https://github.com/sichgeis/babbelstream/blob/main/docs/homebrew-release.md)
 for pinning/reconciliation; rollback is not yet validated on the pilot Mac.
 Never remove Application Support or keys just to fix an install or permission issue.
 
@@ -81,18 +81,20 @@ text, clipboard contents or archives.
 
 ## Maintainer procedure
 
-See the [Homebrew release checklist](https://github.com/sichgeis/babbelstream/blob/codex/homebrew-distribution/docs/homebrew-release.md).
+See the [Homebrew release checklist](https://github.com/sichgeis/babbelstream/blob/main/docs/homebrew-release.md).
 Use version-specific HTTPS release URLs and exact SHA-256; never overwrite released
 bytes. Publish and verify assets before advancing the cask. No install hooks,
 quarantine removal, permission resets, app launches or process killing are permitted.
 
 ## App documentation
 
-- [Start here](https://github.com/sichgeis/babbelstream/blob/codex/homebrew-distribution/README.md): requirements, setup, dictation and privacy.
-- [Setup and troubleshooting](https://github.com/sichgeis/babbelstream/blob/codex/homebrew-distribution/docs/getting-started.md): provider configuration, recovery and deliberate data removal.
-- [Download/launch quality test](https://github.com/sichgeis/babbelstream/blob/codex/homebrew-distribution/docs/homebrew-pilot-smoke-test.md): the current prepublication gate.
-- [Documentation index](https://github.com/sichgeis/babbelstream/blob/codex/homebrew-distribution/docs/README.md): user, developer and maintainer guides.
+- [Start here](https://github.com/sichgeis/babbelstream/blob/main/README.md): requirements, setup, dictation and privacy.
+- [Setup and troubleshooting](https://github.com/sichgeis/babbelstream/blob/main/docs/getting-started.md): provider configuration, recovery and deliberate data removal.
+- [Download/launch quality test](https://github.com/sichgeis/babbelstream/blob/main/docs/homebrew-pilot-smoke-test.md): installation smoke procedure and initial pilot results.
+- [Documentation index](https://github.com/sichgeis/babbelstream/blob/main/docs/README.md): user, developer and maintainer guides.
 
-These links track the app documentation branch until documentation integration.
+The initial pilot is closed; these links track the integrated app documentation on main.
+Untested upgrade, uninstall retention and rollback cases remain in the
+[follow-up matrix](https://github.com/sichgeis/babbelstream/blob/main/docs/implementation-plan.md#homebrew-pilot-lifecycle-follow-ups).
 
 
