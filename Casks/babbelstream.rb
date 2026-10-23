@@ -1,6 +1,6 @@
 cask "babbelstream" do
-  version "0.5.1"
-  sha256 "8dc567ac48285cc3612e1743b30262eb3dd40eecdb4b6d7879d322a41125824d"
+  version "0.5.2"
+  sha256 "728b702d394a21a7af7ebca8d2385422973d2b3ee22ac1c809448f16523a2c82"
 
   url "https://github.com/sichgeis/babbelstream/releases/download/v#{version}/BabbelStream-#{version}.dmg"
   name "BabbelStream"
