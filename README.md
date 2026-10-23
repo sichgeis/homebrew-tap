@@ -1,5 +1,6 @@
 # the maintainer's Homebrew Tap
 
+Homebrew installation and updates for BabbelStream.
 Maintainer: [sichgeis](https://github.com/sichgeis).
 
 ## BabbelStream pilot: staged, not generally available
@@ -79,3 +80,12 @@ See the [Homebrew release checklist](https://github.com/sichgeis/babbelstream/bl
 Use version-specific HTTPS release URLs and exact SHA-256; never overwrite released
 bytes. Publish and verify assets before advancing the cask. No install hooks,
 quarantine removal, permission resets, app launches or process killing are permitted.
+
+## App documentation
+
+- [Start here](https://github.com/sichgeis/babbelstream/blob/codex/homebrew-distribution/README.md): requirements, setup, dictation and privacy.
+- [Setup and troubleshooting](https://github.com/sichgeis/babbelstream/blob/codex/homebrew-distribution/docs/getting-started.md): provider configuration, recovery and deliberate data removal.
+- [Download/launch quality test](https://github.com/sichgeis/babbelstream/blob/codex/homebrew-distribution/docs/homebrew-pilot-smoke-test.md): the current prepublication gate.
+- [Documentation index](https://github.com/sichgeis/babbelstream/blob/codex/homebrew-distribution/docs/README.md): user, developer and maintainer guides.
+
+These links track the staging branch until channel activation and documentation integration.
