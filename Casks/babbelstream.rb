@@ -1,6 +1,6 @@
 cask "babbelstream" do
-  version "0.5.3"
-  sha256 "41b8aed841824c66862b65a11c576364300e3cbd07760370e81f76b77a6a99a2"
+  version "0.6.0"
+  sha256 "2752d399f5b1575be0a0ed9e5e8bb107a8b6b029584c196653c7a9db66f98ce4"
 
   url "https://github.com/sichgeis/babbelstream/releases/download/v#{version}/BabbelStream-#{version}.dmg"
   name "BabbelStream"
@@ -18,7 +18,8 @@ cask "babbelstream" do
     Managed Macs may require IT approval. Do not disable macOS security protections.
 
     Open BabbelStream from Applications and use its setup dialog to grant microphone
-    and Accessibility access and configure your own approved provider and API key.
+    and Accessibility access. Choose local model setup (macOS 14+) or configure
+    your own approved remote provider and API key.
 
     Before upgrading, finish any dictation or recovery work and quit BabbelStream.
     Updates may require permission or Keychain approval again.

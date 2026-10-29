@@ -3,13 +3,14 @@
 Homebrew installation and updates for BabbelStream.
 Maintainer: [sichgeis](https://github.com/sichgeis).
 
-## BabbelStream 0.5.3
+## BabbelStream 0.6.0
 
-The clean 0.5.3 rebuild restores the public installer and Homebrew channel.
-It is Apple Silicon only, requires macOS 13.0 or later, and is ad-hoc signed,
-not notarized by Apple. Existing provider settings are preserved. A direct upgrade
-from a version without saved routing to a LiteLLM namespace needs one explicit
-LiteLLM selection in Settings. Older 0.5.1/0.5.2 installers remain withdrawn.
+Optional Parakeet Ultra speech recognition and Qwen3.5-4B cleanup run locally
+without an API key. Local models require Apple Silicon/macOS 14+, with separate
+explicit downloads (approximately 632 MB for speech and 2.74 GB for cleanup).
+Existing remote settings are preserved; remote dictation still supports macOS 13+.
+The app is Apple Silicon only, ad-hoc signed and not notarized by Apple.
+Older 0.5.1/0.5.2 installers remain withdrawn.
 
 ## Installation
 
@@ -25,8 +26,9 @@ before accepting; don't grant broad trust as a workaround. If macOS blocks the
 first launch, follow [Apple's per-app approval instructions](https://support.apple.com/en-gb/102445).
 On managed Macs, contact IT if approval is unavailable. No security bypass is part
 of this tap. In BabbelStream's onboarding, explicitly grant microphone and
-Accessibility access and configure your own approved provider/API key. No shared
-credential is included. Do not record work content without company authorization.
+Accessibility access. Choose explicit local model setup or configure your own
+approved remote provider/API key. No shared credential is included. Do not record
+work content without company authorization.
 
 Already have a manual installation? Quit it and preserve a rollback bundle.
 A different existing app in Applications can conflict with Homebrew; move that
