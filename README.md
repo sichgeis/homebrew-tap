@@ -3,12 +3,17 @@
 Homebrew installation and updates for BabbelStream.
 Maintainer: [sichgeis](https://github.com/sichgeis).
 
-## BabbelStream 0.6.0
+## BabbelStream 0.6.1
+
+GPT-6 Luna is the default remote cleanup model, with reasoning disabled.
+The two legacy GPT-4o mini aliases migrate on first launch. If your proxy uses
+a custom model ID, check the cleanup selection in Provider Settings.
+[Release notes and manual DMG](https://github.com/sichgeis/babbelstream/releases/tag/v0.6.1)
 
 Optional Parakeet Ultra speech recognition and Qwen3.5-4B cleanup run locally
 without an API key. Local models require Apple Silicon/macOS 14+, with separate
 explicit downloads (approximately 632 MB for speech and 2.74 GB for cleanup).
-Existing remote settings are preserved; remote dictation still supports macOS 13+.
+Remote dictation supports macOS 13+.
 The app is Apple Silicon only, ad-hoc signed and not notarized by Apple.
 Older 0.5.1/0.5.2 installers remain withdrawn.
 
@@ -53,9 +58,8 @@ may require reapproval. If Keychain prompts after every restart despite Always
 Allow, follow the [targeted per-item repair](https://github.com/sichgeis/babbelstream/blob/main/README.md#keychain-asks-for-your-password-after-every-restart).
 Do not allow all applications or delete the saved key. No automatic update check
 runs inside BabbelStream.
-The maintainer uploads each tested version to GitHub and updates the cask's version
-and SHA-256. A first real old-to-new upgrade must be tested separately; a successful
-first install is not upgrade evidence.
+The cask verifies the same versioned DMG available from the app's GitHub release.
+See [current verification and platform coverage](https://github.com/sichgeis/babbelstream/blob/main/docs/project-status.md).
 
 ## Remove or recover
 
@@ -88,8 +92,7 @@ quarantine removal, permission resets, app launches or process killing are permi
 - [Download/launch quality test](https://github.com/sichgeis/babbelstream/blob/main/docs/homebrew-pilot-smoke-test.md): installation smoke procedure and initial pilot results.
 - [Documentation index](https://github.com/sichgeis/babbelstream/blob/main/docs/README.md): user, developer and maintainer guides.
 
-The initial pilot is closed; these links track the integrated app documentation on main.
-Untested upgrade, uninstall retention and rollback cases remain in the
+The remaining pilot cases are tracked in the
 [follow-up matrix](https://github.com/sichgeis/babbelstream/blob/main/docs/implementation-plan.md#homebrew-pilot-lifecycle-follow-ups).
 
 
